@@ -5,14 +5,14 @@ on:
     branches: [main]
 
 jobs:
-  mongo-init:
+  mongo-init-test:
     runs-on: ubuntu-latest
 
     services:
       mongo:
         image: mongo
         ports: ['27017:27017']
-        
+
     env:
       PORT: ${{ secrets.PORT }}
       MONGO_URI: ${{ secrets.MONGO_URI }}
