@@ -12,6 +12,10 @@ jobs:
       mongo:
         image: mongo
         ports: ['27017:27017']
+        
+    env:
+      PORT: ${{ secrets.PORT }}
+      MONGO_URI: ${{ secrets.MONGO_URI }}
 
     steps:
       - name: checkout repository
