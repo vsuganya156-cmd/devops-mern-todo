@@ -15,7 +15,7 @@ jobs:
 
     steps:
       - name: checkout repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v3
       
       - name: setup nodej
         uses: actions/setup-node@v6
@@ -45,7 +45,7 @@ jobs:
         uses: actions/checkout@v5
       
       - name: setup nodej
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v3
         with:
           node-version: '18'
       
