@@ -13,6 +13,7 @@ describe('Get api/tasks',()=>{
         expect(typeof res.body).toBe("object");
         expect(res.body).toHaveProperty("tasks");
         console.log(res.body.tasks, 'DATA SEEDED');
+        console.log('DATA SEEDED');
     })
 
     afterAll(async()=>{
